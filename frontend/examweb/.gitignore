@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Environment variables
+.env
+.env.*        # .env.local, .env.production, etc.
+!.env.example # mantém um exemplo visível no repositório
+# Cache do Vite / ferramentas modernas
+.cache/
+.vite/
+
+# Arquivos temporários de SO
+Thumbs.db
+# Python environment
+venv/
