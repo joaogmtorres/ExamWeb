@@ -7,9 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node
+node_modules/
+dist/
+dist-ssr/
+.cache/
+.vite/
 *.local
 
 # Editor directories and files
@@ -22,15 +25,17 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
 # Environment variables
 .env
-.env.*        # .env.local, .env.production, etc.
-!.env.example # mantém um exemplo visível no repositório
-# Cache do Vite / ferramentas modernas
-.cache/
-.vite/
+.env.*
+!.env.example
 
-# Arquivos temporários de SO
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+backend/venv/
+
+# SO
 Thumbs.db
-# Python environment
-venv/
